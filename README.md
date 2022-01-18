@@ -38,7 +38,7 @@ Answer: Peacock
 
 3. What product was ordered the most by customers in Germany?
 
-Answer: Boston Crab Meat. This product was ordered 160 times in total.
+Answer: Boston Crab Meat
 
-[Click Here]() to check the SQL Queries.
+[Click Here](https://github.com/sumitr12/Data-Science-Intern-Challenge/blob/main/Data_Science_Intern.sql) to check the SQL Queries.
 
