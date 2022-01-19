@@ -9,7 +9,7 @@ SELECT COUNT(*) AS NumberOfOrdersBySpeedyExpress
 FROM [Orders]
 JOIN [Shippers]
     ON [Shippers].ShipperID = [Orders].ShipperID
-WHERE [Shippers].ShipperName = 'Speedy Express'
+WHERE [Shippers].ShipperName = 'Speedy Express';
 
 -- Question 2. What is the last name of the employee with the most orders? --
 -- Answer: Peacock --
@@ -26,7 +26,7 @@ JOIN [Employees]
 ON [Orders].EmployeeID = [Employees].EmployeeID
 GROUP BY [Employees].LastName
 ORDER BY COUNT(*) DESC
-LIMIT 1
+LIMIT 1;
 
 -- Question 3. What product was ordered the most by customers in Germany? --
 -- Answer: Boston Crab Meat --
@@ -49,4 +49,4 @@ JOIN [Products]
 WHERE [Customers].Country = 'Germany'
 GROUP BY [OrderDetails].ProductID
 ORDER BY SUM([OrderDetails].Quantity) DESC
-LIMIT 1
+LIMIT 1;
